@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
 
       <body
-        className={`grid grid-rows-[auto_1fr] min-h-screen bg-[#111315] text-base ${dmsans.className}`}
+        className={`grid grid-rows-[auto_1fr] min-h-screen bg-black text-base ${dmsans.className}`}
       >
         <Header/>
         <main className="flex justify-center items-center ">
