@@ -16,7 +16,7 @@ export default function Product({product}) {
             <span className='bg-[#BEE3CC] text-[#111315] font-bold py-1 px-2 text-xs rounded-md'>{product.price}</span>
             </div>
             <div className='flex justify-between'>
-                {product.rating>0?<div className='flex'><Image src={starFill}/><p className='text-white'>{product.rating} <span className='text-[#6F757C]'>({product.votes} Vote)</span></p></div> : <p className='flex text-[#6F757C]'><Image src={star}/> No rating</p>}
+                {product.rating>0?<div className='flex'><Image src={starFill} alt="star icon filled"/><p className='text-white'>{product.rating} <span className='text-[#6F757C]'>({product.votes} Vote)</span></p></div> : <p className='flex text-[#6F757C]'><Image src={star} alt="star icon"/> No rating</p>}
                 {!product.available && <span className='text-[#ED735D]'>Sold Out</span>}
             </div>
                 
